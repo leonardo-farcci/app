@@ -1,4 +1,4 @@
-package com.leo.appnutri;
+package com.leo.appnutri.Entidades;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -19,6 +19,8 @@ public class Usuario implements Parcelable{
         this.email = email;
         this.senha = senha;
     }
+
+    public Usuario() {}
 
     public static final Creator<Usuario> CREATOR = new Creator<Usuario>() {
         @Override
