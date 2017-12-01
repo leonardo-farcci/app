@@ -54,8 +54,7 @@ public class Login extends AppCompatActivity {
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentAbrirTelaCadastrar = new Intent(Login.this, Cadastrar.class);
-                startActivity(intentAbrirTelaCadastrar);
+                abrirCadastrar();
             }
         });
 
@@ -71,6 +70,8 @@ public class Login extends AppCompatActivity {
 
                     Toast.makeText(Login.this, "Logado!", Toast.LENGTH_SHORT).show();
                     abrirMain();
+                }else{
+                    Toast.makeText(Login.this, "Usuário ou senha incorreto", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -79,6 +80,11 @@ public class Login extends AppCompatActivity {
     public void abrirMain(){
         Intent abrirMain = new Intent(Login.this, Main.class);
         startActivity(abrirMain);
+    }
+
+    public void abrirCadastrar(){
+        Intent intentAbrirTelaCadastrar = new Intent(Login.this, Cadastrar.class);
+        startActivity(intentAbrirTelaCadastrar);
     }
 
     @Override

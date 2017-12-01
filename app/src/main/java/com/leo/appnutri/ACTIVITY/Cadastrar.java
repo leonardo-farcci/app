@@ -7,11 +7,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.leo.appnutri.R;
 
 public class Cadastrar extends AppCompatActivity {
-    private FirebaseAuth mAuth;
-
-    public Cadastrar(FirebaseAuth mAuth) {
-        this.mAuth = mAuth;
-    }
+    private FirebaseAuth autenticar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
