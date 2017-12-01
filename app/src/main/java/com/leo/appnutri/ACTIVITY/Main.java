@@ -1,7 +1,9 @@
-package com.leo.appnutri;
+package com.leo.appnutri.ACTIVITY;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.leo.appnutri.R;
 
 public class Main extends AppCompatActivity {
 

@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ACTIVITY.Cadastrar" />
-        <activity android:name=".Main"></activity>
+        <activity android:name=".ACTIVITY.Main"></activity>
     </application>
 
 </manifest>

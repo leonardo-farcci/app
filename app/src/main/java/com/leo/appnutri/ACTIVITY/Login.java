@@ -13,10 +13,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.leo.appnutri.DAO.ConfiguracaoFireBase;
 import com.leo.appnutri.Entidades.Usuario;
-import com.leo.appnutri.Main;
 import com.leo.appnutri.R;
 
 public class Login extends AppCompatActivity {
