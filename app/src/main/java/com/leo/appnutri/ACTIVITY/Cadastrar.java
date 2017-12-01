@@ -37,8 +37,8 @@ public class Cadastrar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar);
 
-        email = (EditText) findViewById(R.id.emailId);
-        senha = (EditText) findViewById(R.id.senhaId);
+        email = (EditText) findViewById(R.id.emailRegisterId);
+        senha = (EditText) findViewById(R.id.senhaRegisterId);
         nome = (EditText) findViewById(R.id.nomeId);
         btnRegistrar = (Button) findViewById(R.id.registrarId);
 
@@ -71,6 +71,7 @@ public class Cadastrar extends AppCompatActivity {
 
                     Preferencias pref = new Preferencias(Cadastrar.this);
                     pref.salvarUserConfig(identifica, usuario.getNome());
+                    abrirLogin();
                 }else{
                     String error = "";
 
